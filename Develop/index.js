@@ -1,113 +1,75 @@
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
 const fs = require('fs');
-const inquire = require('inquirer');
 
 // TODO: Create an array of questions for user input
+const prompt = inquirer.prompt();
 const questions = [
+    { type: 'input', name: 'title', message: 'project title' },
+    { type: 'input', name: 'motivation', message: 'What was your motivation?' },
+    { type: 'input', name: 'why', message: 'Why did you build this project?' },
+    { type: 'input', name: 'problem', message: 'What problem does it solve?' },
+    { type: 'input', name: 'learnd', message: 'What did you learn?' },
+    { type: 'input', name: 'pro', message: 'What makes your project stand out?' },
+    { type: 'input', name: 'tableofcontent', message: '' },
+    { type: 'input', name: 'installation', message: '' },
+    { type: 'input', name: 'usage', message: '' },
+    { type: 'input', name: 'license', message: '' },
+    { type: 'input', name: 'contributes', message: '' },
+    { type: 'input', name: 'test', message: '' },
+    { type: 'input', name: 'questions', message: '' }];
+    // append answers into fileName 
 
-    inquire.prompt([
-        {
-            type: 'input',
-            name: 'Title',
-            message: 'Enter your Project Title',
-        },
+    prompt(questions).then((fileName.answers), => {
+        console.log('answers')});
 
-        {
-            type: 'input',
-            name: 'description',
-            message: '',
-        },
+const fileName = 
 
-        {
-            type: 'input',
-            name: 'table of contents',
-            message: '',
-        },
+`# ${title}
 
-        {
-            type: 'input',
-            name: 'installation',
-            message: '',
-        },
+## Description << 
+* ${answers.motivation}
+* ${answers.why}
+*${answers.problem}
+* ${answers.learned}
+* ${answers.pro}
+//* array of questions goes here  */
 
-        {
-            type: 'input',
-            name: 'usage',
-            message: '',
-        },
+## Table of Contents 
+* ${answers.tableofcontent}
 
-        {
-            type: 'input',
-            name: 'license',
-            message: '',
-        },
+## Installation <<
+* ${answers.installation}
 
-        {
-            type: 'input',
-            name: 'contributes',
-            message: '',
-        },
+## Usage <<
+* ${answers.usage}
 
+## License
+* ${answers.license}
 
-        {
-            type: 'input',
-            name: 'test',
-            message: '',
-        },
+## Contributes <<
+* ${answers.contributes}
 
-        {
-            type: 'input',
-            name: 'questions',
-            message: '',
-        },])
-    ];
+## Test <<
+* ${answers.test}
+
+## Questions
+* ${answers.questions}` ;
 
 
-
-
-
-// append the users input from varibable question into the function to write README file
-
+     
 // TODO: Create a function to write README file
+
+/* // define fileName an data
 function writeToFile(fileName, data) {
-    `# ${questions.Title}
-    ## Description 
-    ${description}
-    //* / questions?? array // */
 
-    ## Table of Contents 
-    ${tableofcontents}
+    fs.writeFile(
+        'README.md'
 
-    ##Installation
-    ${installation}
-
-    ## Usage
-    ${usage}
-
-    ##License
-    ${license}
-
-    ## Contributes
-    ${contributes}
-
-    ## Test
-    ${test}
-
-    ## Questions
-    ${questions}
-    
-   
-
-
-    `
-
-    fs.writeFile('README.md', questions,fileName, data,
         (err) => err ? console.log(err) : console.log('Thank you !'));
-};
-writeToFile();
 
 // TODO: Create a function to initialize app
 function init() { }
 
 // Function call to initialize app
-init();
+init(); */
