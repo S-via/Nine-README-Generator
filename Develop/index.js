@@ -3,8 +3,9 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const prompt = inquirer.prompt();
-const questions = [
+
+const questions = inquirer.prompt([
+
     { type: 'input', name: 'title', message: 'project title' },
     { type: 'input', name: 'motivation', message: 'What was your motivation?' },
     { type: 'input', name: 'why', message: 'Why did you build this project?' },
@@ -17,59 +18,63 @@ const questions = [
     { type: 'input', name: 'license', message: '' },
     { type: 'input', name: 'contributes', message: '' },
     { type: 'input', name: 'test', message: '' },
-    { type: 'input', name: 'questions', message: '' }];
-    // append answers into fileName 
+    { type: 'input', name: 'questions', message: '' }])
+    
+    questions.then(answers => {
+        console.log(answers);
+        /* const fileData = readmeTemplet(answers); */
+    }
+    );
+// append answers into readmeTemplet
 
-    prompt(questions).then((fileName.answers), => {
-        console.log('answers')});
+const readmeTemplet =
 
-const fileName = 
-
-`# ${title}
-
-## Description << 
-* ${answers.motivation}
-* ${answers.why}
-*${answers.problem}
-* ${answers.learned}
-* ${answers.pro}
-//* array of questions goes here  */
-
-## Table of Contents 
-* ${answers.tableofcontent}
-
-## Installation <<
-* ${answers.installation}
-
-## Usage <<
-* ${answers.usage}
-
-## License
-* ${answers.license}
-
-## Contributes <<
-* ${answers.contributes}
-
-## Test <<
-* ${answers.test}
-
-## Questions
-* ${answers.questions}` ;
+    `# ${answers.title}
+        
+        ## Description << 
+        * ${answers.motivation}
+        * ${answers.why}
+        *${answers.problem}
+        * ${answers.learned}
+        * ${answers.pro}
+        //* array of questions goes here  */
+        
+        ## Table of Contents 
+        * ${answers.tableofcontent}
+        
+        ## Installation <<
+        * ${answers.installation}
+        
+        ## Usage <<
+        * ${answers.usage}
+        
+        ## License
+        * ${answers.license}
+        
+        ## Contributes <<
+        * ${answers.contributes}
+        
+        ## Test <<
+        * ${answers.test}
+        
+        ## Questions
+        * ${answers.questions}`
 
 
-     
 // TODO: Create a function to write README file
 
-/* // define fileName an data
-function writeToFile(fileName, data) {
+/* define fileName an data */
 
-    fs.writeFile(
-        'README.md'
+/* function writeToFile (fileName) {
+    
+    fs.writeFile('README.md',fileName)}; */
 
-        (err) => err ? console.log(err) : console.log('Thank you !'));
 
-// TODO: Create a function to initialize app
-function init() { }
+/*  // TODO: Create a function to initialize app //
+function init=()=> { 
+    .then(() => console.log('thank you!))
+    .catch ((err) => console.error(err));
+    };
 
-// Function call to initialize app
-init(); */
+//Function call to initialize app(())
+init();   */
