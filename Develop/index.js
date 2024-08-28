@@ -12,19 +12,22 @@ const questions = inquirer.prompt([
     { type: 'input', name: 'problem', message: 'What problem does it solve?' },
     { type: 'input', name: 'learnd', message: 'What did you learn?' },
     { type: 'input', name: 'pro', message: 'What makes your project stand out?' },
-    { type: 'input', name: 'tableofcontent', message: '' },
     { type: 'input', name: 'installation', message: '' },
     { type: 'input', name: 'usage', message: '' },
     { type: 'input', name: 'license', message: '' },
     { type: 'input', name: 'contributes', message: '' },
     { type: 'input', name: 'test', message: '' },
-    { type: 'input', name: 'questions', message: '' }])
-    
-    questions.then(answers => {
-        console.log(answers);
-        /* const fileData = readmeTemplet(answers); */
-    }
-    );
+    { type: 'input', name: 'questions', message: '' },
+    { type: 'input', name: 'usergit', message: '' },
+    {type: 'input' , name: 'email', message:''},
+])
+
+questions.then(answers => {
+    console.log(answers);
+
+}
+);
+// .catch
 // append answers into readmeTemplet
 
 const readmeTemplet =
@@ -40,7 +43,14 @@ const readmeTemplet =
         //* array of questions goes here  */
         
         ## Table of Contents 
-        * ${answers.tableofcontent}
+        * [Description](#description)
+        * [Installation](#installation)
+        * [Usage](#usage)
+        * [License](#license)
+        * [Contributes](#contributes)
+        * [Test](#test)
+        * [Questions](#questions)
+        
         
         ## Installation <<
         * ${answers.installation}
@@ -58,16 +68,18 @@ const readmeTemplet =
         * ${answers.test}
         
         ## Questions
-        * ${answers.questions}`
+        * ${answers.questions}
+        - Email me ${answers.email} 
+        - GitHub [${answers.usergit}](http://github.com/${answers.usetgit})`
 
 
 // TODO: Create a function to write README file
 
 /* define fileName an data */
 
-/* function writeToFile (fileName) {
+/* function writeToFile (fileName , data) {
     
-    fs.writeFile('README.md',fileName)}; */
+    fs.writeFile('README.md',fileName,data)}; */
 
 
 /*  // TODO: Create a function to initialize app //
