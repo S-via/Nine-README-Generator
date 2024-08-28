@@ -12,15 +12,25 @@ const questions = inquirer.prompt([
     { type: 'input', name: 'problem', message: 'What problem does it solve?' },
     { type: 'input', name: 'learnd', message: 'What did you learn?' },
     { type: 'input', name: 'pro', message: 'What makes your project stand out?' },
-    { type: 'input', name: 'installation', message: '' },
-    { type: 'input', name: 'usage', message: '' },
-    { type: 'input', name: 'license', message: '' },
-    { type: 'input', name: 'contributes', message: '' },
-    { type: 'input', name: 'test', message: '' },
+    { type: 'input', name: 'installation', message: 'Please explain the installation instructions ' },
+    { type: 'input', name: 'usage', message: 'What is the usage for this project? ' },
+    // this is an options list 
+    {
+        type: 'list', name: 'license', message: "Chose license for your project: ",
+        choices: [
+            "",
+            "",
+            "",
+            "",
+        ]
+    },
+
+    { type: 'input', name: 'contributes', message: 'Who contribute to this project' },
+    { type: 'input', name: 'test', message: 'Please enter test instructions' },
     { type: 'input', name: 'questions', message: '' },
-    { type: 'input', name: 'usergit', message: '' },
-    {type: 'input' , name: 'email', message:''},
-])
+    { type: 'input', name: 'usergit', message: 'Please enter your Github username: ' },
+    { type: 'input', name: 'email', message: 'Pleae enter your email: ' }
+]);
 
 questions.then(answers => {
     console.log(answers);
@@ -30,6 +40,7 @@ questions.then(answers => {
 // .catch
 // append answers into readmeTemplet
 
+function 
 const readmeTemplet =
 
     `# ${answers.title}
