@@ -47,9 +47,9 @@ questions.then(answers => {
 
 /* define fileName an data */
 
-/* function writeToFile (fileName , data) {
+function writeToFile (fileName , data) {
     
-    fs.writeFile('README.md',fileName,data)}; */
+    fs.writeFile('README.md',fileName,data)};
 
 
 /*  // TODO: Create a function to initialize app //
