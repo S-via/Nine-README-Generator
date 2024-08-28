@@ -50,8 +50,8 @@ function generateMarkdown(data) {
         
         ## Questions
         * ${data.questions}
-        - Email me ${data.email} 
-        - GitHub [${data.usergit}](http://github.com/${data.usetgit})`
+        - Email me for questions ${data.email} 
+        - My GitHub [${data.usergit}](http://github.com/${data.usetgit})`
 
 
     ;
