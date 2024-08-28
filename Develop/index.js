@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const data = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 
@@ -40,7 +41,7 @@ questions.then(answers => {
 // .catch
 // append answers into readmeTemplet
 
-function 
+
 const readmeTemplet =
 
     `# ${answers.title}
