@@ -42,48 +42,6 @@ questions.then(answers => {
 // append answers into readmeTemplet
 
 
-const readmeTemplet =
-
-    `# ${answers.title}
-        
-        ## Description << 
-        * ${answers.motivation}
-        * ${answers.why}
-        *${answers.problem}
-        * ${answers.learned}
-        * ${answers.pro}
-        //* array of questions goes here  */
-        
-        ## Table of Contents 
-        * [Description](#description)
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [License](#license)
-        * [Contributes](#contributes)
-        * [Test](#test)
-        * [Questions](#questions)
-        
-        
-        ## Installation <<
-        * ${answers.installation}
-        
-        ## Usage <<
-        * ${answers.usage}
-        
-        ## License
-        * ${answers.license}
-        
-        ## Contributes <<
-        * ${answers.contributes}
-        
-        ## Test <<
-        * ${answers.test}
-        
-        ## Questions
-        * ${answers.questions}
-        - Email me ${answers.email} 
-        - GitHub [${answers.usergit}](http://github.com/${answers.usetgit})`
-
 
 // TODO: Create a function to write README file
 
