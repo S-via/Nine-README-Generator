@@ -36,6 +36,7 @@ return`# ${data.title}
 * ${data.usage}
 
 ## License 
+![badge](https://img.shields.io/badge/${data.license}-License-pink) 
 <br> This application is covered under ${data.license} License
 
 ## Contributes <<
