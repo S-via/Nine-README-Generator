@@ -1,6 +1,6 @@
 # Title 
 hello<br>
-![badge](https://img.shields.io/badge/${data.license}-License-pink) 
+![badge](https://img.shields.io/badge/Apache-License-pink) 
 
 ## Description
 * [Description](#description)
