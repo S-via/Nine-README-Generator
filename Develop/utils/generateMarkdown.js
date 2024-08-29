@@ -14,7 +14,7 @@ function renderLicenseSection(license) { }
 function generateMarkdown(data) {
   return `
       # ${data.title}
-  
+        ## ${data.license} // the option of license they choose will be in here <<<
         ## Description << 
         * ${data.motivation}
         * ${data.why}
