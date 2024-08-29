@@ -20,8 +20,8 @@ const questions = [
     {
         type: 'list', name: 'license', message: "Chose license for your project: ",
         choices: [
-            "",
-            "",
+            "MIT",
+            "OTHER",
             "",
             "",
         ]

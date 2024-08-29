@@ -1,11 +1,11 @@
 # TITLE
-##  // the option of license they choose will be in here <<<
+## ![badge](https://img.shields.io/badge/MIT-License-pink) // the option of license they choose will be in here <<<
 ## Description << 
-* motivation
-* built
-*solved
-* undefined
-* stand out
+* IDK
+* IDK
+*IDK
+* IDK
+* IDK
 //* array of questions goes here  */
 ## Table of Contents 
 * [Description](#description)
@@ -16,18 +16,18 @@
 * [Test](#test)
 * [Questions](#questions)
 ## Installation <<
-* instructions
+* OK
 
 ## Usage <<
-* used for 
+* IDK
 
-## License
-* 
+## License 
+<br> This application is covered under MIT
 ## Contributes <<
-* me
+* IDK
 ## Test <<
-* instructions
+* IDK
 ## Questions
-* nop
-- Email me for questions silvia 
-- My GitHub [silv](http://github.com/undefined)
+* IDK
+- Email me for questions IDK 
+- My GitHub [IDK](http://github.com/undefined)
