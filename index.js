@@ -1,18 +1,18 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkDown = require("./utils/generateMarkdown.js");
+const generateMarkDown = require("./utils/generateMarkdown");
 
 
 // TODO: Create an array of questions for user input
 
-const questions = inquirer.prompt([
+const questions = [
 
     { type: 'input', name: 'title', message: ' What is your project title? ' },
     { type: 'input', name: 'motivation', message: 'What was your motivation?' },
     { type: 'input', name: 'why', message: 'Why did you build this project?' },
     { type: 'input', name: 'problem', message: 'What problem does it solve?' },
-    { type: 'input', name: 'learnd', message: 'What did you learn?' },
+    { type: 'input', name: 'learned', message: 'What did you learn?' },
     { type: 'input', name: 'pro', message: 'What makes your project stand out?' },
     { type: 'input', name: 'installation', message: 'Please explain the installation instructions ' },
     { type: 'input', name: 'usage', message: 'What is the usage for this project? ' },
@@ -32,41 +32,34 @@ const questions = inquirer.prompt([
     { name: 'questions', message: 'If you have any questions, please reach out' },
     { type: 'input', name: 'usergit', message: 'Please enter your Github username: ' },
     { type: 'input', name: 'email', message: 'Pleae enter your email: ' }
-]);
-
-questions.then(answers => {
-    console.log(answers);
-
-}
-);
+];
 // TODO: Create a function to write README file
 
 /* define fileName an data */
-/* function writeToFile (fileName, data){
-    
-    fs.writeFile('./utils/new/README.md', fileName, data, (err)  =>{
+ function writeToFile (fileName, data){
+    // the fs.writeFile is to write inside new folder  
+    fs.writeFile('./utils/new/' + fileName, data, (err)  =>{
         
         if (err) {
-            return console.error(err);
+            console.error(err);
         } 
         console.log('readme was generated');
         
     })};        
       
-    
-    
 
-         
-        
     // inside this function writeToFile we will created and README.md inside folder new 
 
  // TODO: Create a function to initialize app //
 function init() { 
-    inquirer.prompt()
-     writeToFile(generateMarkDown) // calling function to write file
-    .then (() => console.log('thank you'))
+    inquirer.prompt(questions)
+    .then ((data) => {
+        console.log('thank you')
+        const markDown = generateMarkDown(data)
+        writeToFile('README.md',markDown) // calling function to write file
+    })
     .catch ((err) => console.error(err));
     };
 
 //Function call to initialize app(())
-init();     */
+init();     
