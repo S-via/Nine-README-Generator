@@ -3,15 +3,29 @@ Apache : '(https://img.shields.io/badge/Apache-License-pink)',
 Mozilla_2.0: '(https://img.shields.io/badge/Mozilla_p2.0-License-blue)',
 GNU v3: '(https://img.shields.io/badge/GNU_v3-License-purple)',} */
 
+/* let badge =''
+if (license ==='Apache'){
+    badge = `(https://img.shields.io/badge/Apache-License-pink)`
+}
+else if (license === 'mOZILLA_2.0'){
+    badge = `(https://img.shields.io/badge/Mozilla_p2.0-License-blue)`
+}
+else if (license === 'GNU v3'){
+    badge = `(https://img.shields.io/badge/GNU_v3-License-purple)`
+   
+}
+else{badge = ''}
+return badge ;
+ */
 // TODO: Create a function that returns a license badge based on which license is passed in 
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-// if there is no (!license)
+   /*  if there is no (!license) */
  if (!license)
- return '';
+ return ''; 
 }
-renderLicenseBadge();
+
 
 
 

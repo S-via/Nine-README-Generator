@@ -59,7 +59,8 @@ function init() {
         writeToFile('README.md',markDown) // calling function to write file
     })
     .catch ((err) => console.error(err));
-    };
+};
 
 //Function call to initialize app(())
 init();     
+
