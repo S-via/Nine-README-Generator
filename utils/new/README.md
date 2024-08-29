@@ -1,5 +1,5 @@
 # i
-## ![badge](https://img.shields.io/badge/-License-pink) 
+## ![badge](https://img.shields.io/badge/GNU_v3-License-pink) 
 ## Description << 
 * i
 * i
@@ -23,7 +23,7 @@
 
 ## License 
 
-This application is covered under ![badge](https://img.shields.io/badge/-License-pink) 
+This application is covered under ![badge](https://img.shields.io/badge/GNU_v3-License-pink) 
 <br> 
 
 ## Contributes <<
