@@ -1,6 +1,9 @@
 # Title 
 Generator for README.md Using Node<br>
 
+## Description
+- In this node application you will be prompted question that will be added for your README.md file, you find this generated README.md inside folder new 
+
 ## USER STORY
 AS A developer
 I WANT a README generator
@@ -28,8 +31,6 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
-## Description
-- In this node application you will be prompted question that will be added for your README.md file, you find this generated README.md inside folder new 
 
 ## Table of Contents
 
