@@ -1,11 +1,11 @@
-# i
+# Example title (:
 ## ![badge](https://img.shields.io/badge/GNU_v3-License-pink) 
 ## Description << 
-* i
-* i
-*i
-* i
-* i
+* Being creative
+* To show case functionaly of node
+*Saves time creating readme.md
+* how to use node with javascript
+* its created with my knowledge
 
 ## Table of Contents 
 * [Description](#description)
@@ -16,10 +16,10 @@
 * [Test](#test)
 * [Questions](#questions)
 ## Installation <<
-* i
+* must install latest verion of node
 
 ## Usage <<
-* i
+* save time to create readme.md
 
 ## License 
 
@@ -27,10 +27,10 @@ This application is covered under ![badge](https://img.shields.io/badge/GNU_v3-L
 <br> 
 
 ## Contributes <<
-* i
+* silvia
 ## Test <<
-* i
+* type node index.js for the prompt
 ## Questions
-* i
-- :speech_ballon: Email me for questions: i 
-- My GitHub:[i](http://github.com/undefined)
+* 
+- :speech_ballon: Email me for questions: silvia@example.com 
+- My GitHub:[S-via](http://github.com/undefined)

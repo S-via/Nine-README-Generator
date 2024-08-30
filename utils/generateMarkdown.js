@@ -100,7 +100,7 @@ This application is covered under ![badge](https://img.shields.io/badge/${data.l
 * ${data.test}
 ## Questions
 * ${data.questions}
-- :speech_ballon: Email me for questions: ${data.email} 
+- Email me for questions: ${data.email} 
 - My GitHub:[${data.usergit}](http://github.com/${data.usetgit})`;
 
 
